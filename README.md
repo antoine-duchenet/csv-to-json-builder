@@ -16,7 +16,7 @@ npm i --save git+ssh://git@github.com/antoine-duchenet/csv-to-json-builder.git
 
 ## Basic Use
 
-### Input :
+### Input
 
 | # | Firstname | Lastname | Age | Phone           | Email                  |  €       |
 |---|-----------|----------|-----|-----------------|------------------------|----------|
@@ -71,7 +71,7 @@ builder.build((built) => {
 
 ## Structured Javascript object
 
-### Input :
+### Input
 
 | # | Firstname | Lastname | Age | Phone           | Email                  |  €       |
 |---|-----------|----------|-----|-----------------|------------------------|----------|
@@ -147,7 +147,7 @@ Currently supported formats :
 - Array : `array` (with a `values` attribute)
 - Object : `object` (with a `properties` attribute)
 
-### Input :
+### Input
 
 | # | Firstname | Lastname | Age | Phone           | Email                  |  €       |
 |---|-----------|----------|-----|-----------------|------------------------|----------|
@@ -239,13 +239,13 @@ The `value` property is affected by the provided format.
 The builder allows you to provide custom formatters.
 
 A formatter is a Javascript function following this signature :
-```
+```js
 function formatter(data, mapping, base)
 ```
 
 The `base` argument is optional, but highly recommended especially if you want to access the builder built-in methods.
 
-### Input :
+### Input
 
 | # | Firstname | Lastname | Age | Phone           | Email                  |  €       |
 |---|-----------|----------|-----|-----------------|------------------------|----------|
@@ -282,6 +282,13 @@ builder.build((built) => {
 });
 
 ```
+
+The first argument of the `Builder.formatters.add()` method is an options object containing :
+- `identifier` : the name of the custom format you want to create
+- `namespace` : a namespacing prefix allowing you to structure your custom formats.
+
+Your format can be called from the mapping object via the `<namespace>:<identifier>` label.
+If no `namespace` is provided at the creation of the format, your format can be accessed via `:<identifier>` (equivalent to an empty string as `namespace`).
 
 ### Output
 

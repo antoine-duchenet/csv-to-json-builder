@@ -1,0 +1,28 @@
+{
+  "name": "csv-to-json-builder",
+  "version": "1.0.0",
+  "description": "Allows to convert flat CSV data to structured JSON data (via a declarative mapping).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoine-duchenet/csv-to-json-builder.git"
+  },
+  "keywords": [
+    "CSV",
+    "JSON",
+    "parser",
+    "builder"
+  ],
+  "author": "Antoine Duchenet <antoine.duchenet@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoine-duchenet/csv-to-json-builder/issues"
+  },
+  "homepage": "https://github.com/antoine-duchenet/csv-to-json-builder#readme",
+  "dependencies": {
+    "csvtojson": "^0.5.2"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "csv-to-json-builder",
   "version": "1.0.0",
-  "description": "Allows to convert flat CSV data to structured JSON data (via a declarative mapping).",
+  "description": "Converts flat CSV data into structured Javascript objects (via a declarative mapping).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

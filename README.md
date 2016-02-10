@@ -29,7 +29,7 @@ npm i --save git+ssh://git@github.com/antoine-duchenet/csv-to-json-builder.git
 ```js
 const JSONBuilder = require('csv-to-json-builder');
 
-const settings = {
+const options = {
     source: 'example.csv',
     mapping: [
         { destination: 'user', format: 'object', properties: [
@@ -40,7 +40,7 @@ const settings = {
     ],
 };
 
-const builder = new JSONBuilder(settings);
+const builder = new JSONBuilder(options);
 
 builder.build((built) => {
     console.log(JSON.stringify(built, null, 4));
@@ -84,7 +84,7 @@ builder.build((built) => {
 ```js
 const JSONBuilder = require('csv-to-json-builder');
 
-const settings = {
+const options = {
     source: 'example.csv',
     mapping: [
         { destination: 'user', format: 'object', properties: [
@@ -99,7 +99,7 @@ const settings = {
     ],
 };
 
-const builder = new JSONBuilder(settings);
+const builder = new JSONBuilder(options);
 
 builder.build((built) => {
     console.log(JSON.stringify(built, null, 4));
@@ -160,7 +160,7 @@ Currently supported formats :
 ```js
 const JSONBuilder = require('csv-to-json-builder');
 
-const settings = {
+const options = {
     source: 'example.csv',
     mapping: [
         { destination: 'user', format: 'object', properties: [
@@ -180,7 +180,7 @@ const settings = {
     ],
 };
 
-const builder = new JSONBuilder(settings);
+const builder = new JSONBuilder(options);
 
 builder.build((built) => {
     console.log(JSON.stringify(built, null, 4));
@@ -258,7 +258,7 @@ The `base` argument is optional, but highly recommended especially if you want t
 ```js
 const JSONBuilder = require('csv-to-json-builder');
 
-const settings = {
+const options = {
     source: 'example.csv',
     mapping: [
         { destination: 'user', format: 'object', properties: [
@@ -270,7 +270,7 @@ const settings = {
     ],
 };
 
-const builder = new JSONBuilder(settings);
+const builder = new JSONBuilder(options);
 
 builder.formatters.add({ identifier: 'euro', namespace: 'custom'}, (data, mapping, base) => {
     const float = base.float(data, mapping);

@@ -8,8 +8,9 @@ const builder = new JSONBuilder(options);
 
 describe('Builder', () => {
     it('#build()', () => {
-        builder.build((built) => {
-            assert(built);
+        builder.build((err, built) => {
+            assert(err === null);
+            assert(built !== null);
         });
     });
 });

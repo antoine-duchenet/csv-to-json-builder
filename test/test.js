@@ -11,6 +11,7 @@ describe('Builder', () => {
         builder.build((err, built) => {
             assert(err === null);
             assert(built !== null);
+            console.log(built);
         });
     });
 });

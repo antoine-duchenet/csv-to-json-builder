@@ -1,3 +1,5 @@
+# NOTE : Some parts of this documentation are currently obsolete.
+
 # CSV to JSON Builder
 
 Converts flat CSV data into structured Javascript objects (via a declarative mapping).

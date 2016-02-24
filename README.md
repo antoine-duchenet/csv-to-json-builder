@@ -1,4 +1,4 @@
-# NOTE : Some parts of this documentation are currently obsolete.
+# This documentation not complete at the moment, check the provided JSDoc for a complete overview of the provided features.
 
 # CSV to JSON Builder
 
@@ -314,7 +314,3 @@ If no `namespace` is provided at the creation of the format, your format can be 
     }
 ]
 ```
-
-## JSON Output
-
-Even if the module is called `csv-to-json-builder`, the `Builder.build()` method returns a Javascript array of Javacript objects. The standart `JSON.stringify()` method allows you to transform this result into real JSON data.

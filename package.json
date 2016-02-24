@@ -4,7 +4,8 @@
     "description": "Converts flat CSV data into structured Javascript objects (via a declarative mapping).",
     "main": "index.js",
     "scripts": {
-        "test": "mocha"
+        "test": "mocha",
+        "doc": "node doc.js"
     },
     "repository": {
         "type": "git",

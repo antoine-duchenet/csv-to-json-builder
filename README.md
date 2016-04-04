@@ -1,4 +1,4 @@
-# This documentation not complete at the moment, check the provided JSDoc for a complete overview of the provided features.
+# This documentation is not complete at the moment, check the provided JSDoc for a complete overview of the provided features.
 
 # CSV to JSON Builder
 
